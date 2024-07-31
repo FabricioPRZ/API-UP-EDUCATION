@@ -42,7 +42,7 @@ export class UserCourseRepository {
         const values = [user_id, course_id];
 
         return new Promise((resolve, reject) => {
-            connection.query(query, values, (error, result) => {
+            connection.query(query, values, (error) => {
                 if (error) {
                     reject(error);
                 } else {
